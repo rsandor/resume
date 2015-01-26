@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Ryan Sandor Richards</h1>
+  <p class="subtitle">Software Engineer - San Francisco, CA - <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+  <h2>History &amp; Overview</h2>
+  <p>My interest in programming began at the age of ten when I wanted to make my own video games. At first I worked in QBasic but quickly started picking up other languages. By the time I finished high school I was proficient in C/C++, HTML/CSS/JavaScript, PHP, Visual Basic, and Java.</p>
+
+  <p>During my undergraduate at Michigan Tech I further honed my skills by learning computer science fundamentals, <a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1627882" target="_blank">authoring a technical publication</a>, and placing top 50 at the <a href="http://icpc.baylor.edu/community/results-2008" target="_blank">2008 ACM ICPC world finals</a> (47th, Michigan Technological University). Over the last few years I've been focusing a lot on front-end engineering and have primarily used a combination of JavaScript, Ruby, and PHP.</p>
+
+  <p>My major long term goal is to become a world class algorist. To that end I spend a great deal of free time studying algorithms and working on various mathematical/programming challenges. From this perspective, the qualities of my ideal employer are as such:</p>
+  <ul>
+    <li>Has tough algorithmic / engineering problems to be solved</li>
+    <li>Employs bright and more experiences engineers, from which I can learn</li>
+    <li>Has strong managerial leadership with a focus on transparency and empathy</li>
+  </ul>
+
+
+  <h2>Select Projects</h2>
+
+  <h3>Epoch</h3>
+  <p><a target="_blank" href="https://github.com/fastly/epoch">View on Github</a></p>
+
+  <p>At Fastly I was in charge of building our real-time analytics dashboard. The dashboard displayed visualizations for a set of direct and derived metrics that were of importance to CDN customers (such as caching hit ratio, number of requests, backend latency, etc.). New data was posted every second, and the visualizations needed to smoothly translate from point-to-point.</p>
+
+  <p>I was very fond of d3 at the time, so I used it exclusively during my first implementation. Unfortunately, I found that d3 performed rather poorly for complex and persistent animated visualizations (sometimes using 100% of an entire core on my MacBook Pro). After experimenting with a few approaches I finally settled on using a hybrid of both HTML5 Canvas and d3. This allowed me to build visualizations that used as much of the core SVG functionality of d3 while giving raster graphics performance during animations and transitions.</p>
+
+  <p>Taking what I learned from my implementation, I built Epoch as a general purpose library which used the hybrid d3 / Canvas approach and released it as an open source project on Github. The project was featured by Github and quickly rose to over 3700 stars.</p>
+
+  <h3>NES Breakout</h3>
+  <p><a target="_blank" href="https://github.com/rsandor/NES-Breakout">View on Github</a></p>
+
+  <p>My interest in programming was a direct consequence of playing video games on the original Nintendo Entertainment System (NES). For years, I had always wanted to make my own NES games, but finding information on how to do so was very challenging. In 2012 I decided to bite the bullet and learn 6502 Assembly along with basic NES programming. It took me a few months but eventually I was able to piece together enough information about the archaic system to build a simple breakout game which runs perfectly in an NES emulator.</p>
+
+  <p>While I had programmed in assembly many times before (TI-86, Mips, etc.), this was a particularly fun project because it took a lot reading and experimentation to figure out the quirks of such an old architecture. For instance, I had to write my own font and graphic utilities that would convert images into binary that could be included with the ROM for the game. The project also required that I build a slew of important assembly routines, including:</p>
+
+  <ul>
+    <li>String Printing - the NES doesn't have system libraries like stdio,
+    <li>Binary Coded Decimal Operations - to easily store and display scores, and
+    <li>16-bit integer mathematics - the NES was an 8-bit system.
+  </ul>
+
+  <p>While not a great example of modern engineering work, this project will always be very near and dear to my heart.</p>
+
+
+  <h3>Objection</h3>
+  <p><a target="_blank" href="https://github.com/rsandor/objection">View on Github</a></p>
+
+  <p>Objection was my first serious attempt at writing a programming language. Written in C/Flex/Bison, I designed the language to be functional but use an familiar C-style imperative syntax. Over the course of writing the language I ended up implementing a variety of routines and structures, including:</p>
+
+  <ul>
+    <li>Recursive environments with custom hashing,
+    <li>A full library of built-in functions,
+    <li>Dynamically typed scalars,
+    <li>Abstract Syntax Tree data type,
+    <li>Full lexer and parser,
+    <li>et. al.
+  </ul>
+
+
+  <h2>Work Experience</h2>
+
+  <h3 class="work">Fastly - Engineering / BD (Nov 2013 - Oct 2014)</h3>
+  <ul>
+    <li>Authored <a href="http://fastly.github.io/epoch/" target="_blank">Epoch</a>, an open source charting library based on d3.
+    <li>Advised the Business Development team and took point from an engineering perspective on large partnerships.
+    <li>Continued to help with Engineering including font-end and API work.
+    <li>Interfaced directly with the Marketing team to build booth demonstrations and write technical posts for the company blog.
+    <li>Organized an "Introduction to Computing" class for non-technical employees teaching them the basics of binary numbers, computer architecture, digital logic, symbolic logic, set theory, and regular languages.
+    <li>Formal Speaking Engagements: <a href="http://vimeo.com/96425319" target="_blank">ScotlandJS 2014</a> and OSCON 2014.
+  </ul>
+
+  <h3 class="work">Fastly - Software Engineer (Jul 2011 - Oct 2013)</h3>
+  <ul>
+    <li>Built Fastly's single page configuration application using Backbone.js + CoffeeScript.
+    <li>Designed and implemented a highly efficient real-time analytics dashboard using a hybrid d3 (SVG) + HTML5 Canvas approach.
+    <li>Advised on API design for single page apps (with a focus on performance).
+    <li>Built the Historical Statistics API using Sinatra.
+    <li>Built an internal and external facing Historical Stats dashboard with d3.
+    <li>Designed and implemented two websites including full API documentation.
+    <li>As the 4th Employee I was intimately involved with large portion of the decision making process for the company.
+    <li>Additional duties included marketing copy writing sales engineering support and hiring.
+    <li>Formal Speaking Engagements: <a href="http://vimeo.com/45140516" target="_blank">ScotlandJS 2012</a> &amp; <a href="http://vimeo.com/68522448" target="_blank">ScotlandJS 2013</a>.
+  </ul>
+
+  <h3 class="work">Huddler - Software Engineer (Dec 2010 - Jun 2011)</h3>
+  <ul><li>Primarily front-end engineering working in YUI2 and YUI3.</ul>
+
+  <h3 class="work">Scribd - Software Engineer (Mar 2010 - Jul 2010)</h3>
+  <ul><li>Focused primarily on front-end engineering rails development and mobile applications.</ul>
+
+  <h3 class="work">FreeCause - Software Engineer (Dec 2008 - Mar 2010)</h3>
+  <ul>
+    <li>Designed ajax-enabled web application for creating editing and publishing browser toolbars.
+    <li>Developed web-based content localization system.
+    <li>Single handedly developed white-labeling approach for flagship product.
+    <li>Wrote an API for handling web authentication and authorization for flagship product.
+  </ul>
+
+  <h3 class="work">Michigan Technological University - Research Assistant (Dec 2007 - Nov 2008)</h3>
+  <ul>
+    <li>Implemented mega-scale agent-based models using nVidia CUDA.
+    <li>Worked with Medical Doctors to create data-parallel versions of their models.
+    <li>Wrote a technical publication on my work.
+    <li>Helped draft grant proposals for the group.
+  </ul>
+
+
+  <h2>Education</h2>
+  Michigan Technological University BS, Computer Science 2008
+
+</div>

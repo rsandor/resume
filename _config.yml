@@ -1,0 +1,12 @@
+# Site settings
+title: Ryan Sandor Richards
+email: sandor.richards@gmail.com
+description: >
+    San Francisco, CA based Software Engineer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: rsandor
+github_username:  rsandor
+
+# Build settings
+markdown: kramdown
